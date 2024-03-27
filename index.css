@@ -1,11 +1,11 @@
 body {
     /* background-color: #10110d; */
-    background: rgb(16, 17, 13);
-    background: linear-gradient(183deg, rgb(13, 14, 11) 0%, rgb(0, 17, 20) 100%);
-    background-size: cover;
-    color: #41a8b8;
+    background-color: #ECEFF4;
+    color: #3B4252;
     padding: 5px 20px;
     height: 100vw;
+    width: 90vw;
+    margin: auto;
 }
 
 header {
@@ -13,24 +13,56 @@ header {
     font-weight: 400;
     font-style: normal;
     /* background-color: #474973; */
-    letter-spacing: 0.5em;
-    /* border-bottom: 2px solid #41a8b8; */
-    color: #41a8b8;
-    text-align: center;
+    letter-spacing: 0.3em;
+    border-bottom: 2px solid #D8DEE9;
+    color: #3B4252;
+    /* text-align: center; */
+}
+
+header h1 {
+    font-size: 1.2rem;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: middle;
+    line-height: 100%;
+}
+
+
+#headerContainer {
+    display: flex;
+    /* border: 1px solid black; */
+    justify-content: space-between;
+    align-content: center;
+    font-size: 1.2rem;
+    vertical-align: middle;
+}
+
+#headerContainer img {
+    height: 40px;
+    width: 100%;
+    object-fit: contain;
+}
+
+#headerLeft {
+    vertical-align: middle;
 }
 
 main h3 {
-    text-align: center;
+    /* text-align: center; */
+    font-size: 1em;
+    font-weight: 400;
 }
 
-.glowLine {
+/* .glowLine {
     height: 1px;
-    background-color: #41a8b8;
-    box-shadow: 0px 0px 4px 1px #41a8b8;
-    margin: auto;
-    width: 80%;
+    background-color: D8DEE9
+    /* background-color: #41a8b8;
+    box-shadow: 0px 0px 4px 1px #41a8b8; */
+margin: auto;
+width: 80%;
 }
 
+*/
 /* @media only screen and (max-width: 600px) {
     header {
         text-align: center;

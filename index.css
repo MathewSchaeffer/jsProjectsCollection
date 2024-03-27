@@ -20,11 +20,9 @@ header {
 }
 
 header h1 {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     padding: 0px;
-    margin: 0px;
-    vertical-align: middle;
-    line-height: 100%;
+    /* margin: 0px; */
 }
 
 
@@ -34,18 +32,22 @@ header h1 {
     justify-content: space-between;
     align-content: center;
     font-size: 1.2rem;
-    vertical-align: middle;
+}
+
+#headerRight {
+    display: flex;
+    align-items: center;
 }
 
 #headerContainer img {
     height: 40px;
     width: 100%;
-    object-fit: contain;
+    /* object-fit: contain; */
 }
 
-#headerLeft {
+/* #headerLeft {
     vertical-align: middle;
-}
+} */
 
 main h3 {
     /* text-align: center; */
@@ -53,16 +55,8 @@ main h3 {
     font-weight: 400;
 }
 
-/* .glowLine {
-    height: 1px;
-    background-color: D8DEE9
-    /* background-color: #41a8b8;
-    box-shadow: 0px 0px 4px 1px #41a8b8; */
-margin: auto;
-width: 80%;
-}
 
-*/
+
 /* @media only screen and (max-width: 600px) {
     header {
         text-align: center;

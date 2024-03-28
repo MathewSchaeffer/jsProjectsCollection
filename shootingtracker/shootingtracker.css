@@ -1,0 +1,56 @@
+#scoreContainer {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#scoreContainer button {
+    padding: 15px 35px;
+}
+
+#scoreContainer p {
+    font-size: 3em;
+}
+
+
+
+#main {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin: auto;
+
+}
+
+#miss,
+#goal,
+#accuracy {
+    text-align: center;
+    width: 50%;
+}
+
+#miss {
+    margin-right: 20px;
+}
+
+#goal {
+    margin-left: 20px;
+}
+
+#accuracy p {
+    font-size: 5em;
+}
+
+#reset {
+    margin-top: 25px;
+
+    text-align: center;
+}
+
+#reset button {
+    padding: 15px 25px;
+    width: 200px;
+}

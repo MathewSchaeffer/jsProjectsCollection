@@ -15,7 +15,7 @@
 
 
 #main {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,15 +45,15 @@
 }
 
 .bad {
-    color: red;
+    color: rgb(252, 17, 17);
 }
 
 .average {
-    color: orange;
+    color: rgb(228, 153, 14);
 }
 
 .good {
-    color: green;
+    color: rgb(9, 197, 9);
 }
 
 #reset {

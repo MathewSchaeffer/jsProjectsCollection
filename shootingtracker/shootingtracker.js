@@ -12,7 +12,7 @@ let attempts = 0;
 let accuracyScore = 0.0;
 
 missButton.addEventListener('click', (e) => {
-    console.log("miss button pressed");
+    // console.log("miss button pressed");
     miss++;
     attempts++;
     missScore.innerText = miss;
@@ -22,7 +22,7 @@ missButton.addEventListener('click', (e) => {
 });
 
 goalButton.addEventListener('click', (e) => {
-    console.log("goal button pressed");
+    // console.log("goal button pressed");
     goal++;
     attempts++;
     goalScore.innerText = goal;
@@ -56,35 +56,17 @@ function resetAll() {
 function calculatePercentage(number1, number2) {
     accuracyScore = (goal / attempts) * 100;
     accuracyLabel.innerText = accuracyScore.toFixed(1);
-    // switch (accuracyScore) {
-    //     case accuracyScore < 25:
-    //         console.log("Score can be better");
-    //         break;
-    //     case accuracyScore < 70:
-    //         console.log("You're doing pretty good");
-    //         break;
-    //     case accuracyScore <= 100:
-    //         console.log("You're doing great!");
-    //         break;
+
     accuracyLabel.classList.remove("good");
     accuracyLabel.classList.remove("average");
     accuracyLabel.classList.remove("bad");
-    if (accuracyScore > 75) {
-        console.log("You're doing great!");
+
+    if (accuracyScore >= 75) {
         accuracyLabel.classList.add("good");
-    } else if (accuracyScore >= 50 && accuracyScore <= 75) {
-        console.log("Getting there!");
+    } else if (accuracyScore >= 50 && accuracyScore < 75) {
         accuracyLabel.classList.add("average");
-    } else if (accuracyScore <= 50) {
-        console.log("Score can be better");
+    } else if (accuracyScore < 50) {
         accuracyLabel.classList.add("bad");
     }
 
 }
-
-
-// function accuracyColor(accuracyScore) {
-//     if (accuracyScore < 30) {
-//         accuracyLabel.classList.add("bad");
-//     }
-// }

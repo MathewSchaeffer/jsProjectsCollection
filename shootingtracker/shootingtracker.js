@@ -1,3 +1,10 @@
+/*
+Shooting Accuracy Tracker
+Made as a helper app to assist my daughters track their netball goal accuracy
+Mathew Schaeffer
+*/
+
+// Init Variables
 const missButton = document.querySelector("#miss button");
 const goalButton = document.querySelector("#goal button");
 const missScore = document.querySelector("#miss p");
@@ -11,8 +18,11 @@ let goal = 0;
 let attempts = 0;
 let accuracyScore = 0.0;
 
+//Display Starting Stats
+resetAll();
+
+// Miss Button event handler
 missButton.addEventListener('click', (e) => {
-    // console.log("miss button pressed");
     miss++;
     attempts++;
     missScore.innerText = miss;
@@ -21,16 +31,16 @@ missButton.addEventListener('click', (e) => {
 
 });
 
+// Goal Button event handler
 goalButton.addEventListener('click', (e) => {
-    // console.log("goal button pressed");
     goal++;
     attempts++;
     goalScore.innerText = goal;
     updateAttempts(attempts);
-    calculatePercentage(attempts, goal);
-    // accuracyColor(accuracyScore);
+    calculatePercentage(goal, attempts);
 });
 
+// Reset Button event handler
 resetButton.addEventListener('click', (e) => {
     resetAll();
 });
@@ -39,6 +49,7 @@ function updateAttempts(attempts) {
     attemptsLabel.innerText = attempts;
 }
 
+// Reset all vars, labels and added classes
 function resetAll() {
     miss = 0;
     goal = 0;
@@ -53,10 +64,17 @@ function resetAll() {
     accuracyLabel.classList.remove("bad");
 }
 
-function calculatePercentage(number1, number2) {
+function calculatePercentage(goal, attempts) {
+
+    //calc accuracy percentage
     accuracyScore = (goal / attempts) * 100;
+
+    //update accuracy label
     accuracyLabel.innerText = accuracyScore.toFixed(1);
 
+    /* reset accuracyLabel classList
+        update classes
+    */
     accuracyLabel.classList.remove("good");
     accuracyLabel.classList.remove("average");
     accuracyLabel.classList.remove("bad");

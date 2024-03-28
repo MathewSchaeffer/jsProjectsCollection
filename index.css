@@ -60,6 +60,27 @@ main h3 {
     font-weight: 400;
 }
 
+#projectsContainer {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.project {
+    /* background-color: pink; */
+    width: 400px;
+    height: 400px;
+    border: 1px solid black;
+    /* min-width: 400px; */
+    text-align: center;
+
+    font-size: 1.0rem;
+    margin-top: 5px;
+    padding-top: 0px;
+
+}
+
 
 
 /* @media only screen and (max-width: 600px) {

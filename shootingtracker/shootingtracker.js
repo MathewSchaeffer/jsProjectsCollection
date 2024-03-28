@@ -59,9 +59,7 @@ function resetAll() {
     missScore.innerText = miss
     attemptsLabel.innerText = attempts;
     accuracyLabel.innerText = accuracyScore.toFixed(1);
-    accuracyLabel.classList.remove("good");
-    accuracyLabel.classList.remove("average");
-    accuracyLabel.classList.remove("bad");
+    clearClasses()
 }
 
 function calculatePercentage(goal, attempts) {
@@ -75,16 +73,23 @@ function calculatePercentage(goal, attempts) {
     /* reset accuracyLabel classList
         update classes
     */
-    accuracyLabel.classList.remove("good");
-    accuracyLabel.classList.remove("average");
-    accuracyLabel.classList.remove("bad");
+    clearClasses()
 
-    if (accuracyScore >= 75) {
+    if (accuracyScore >= 70) {
+        accuracyLabel.classList.add("great");
+    } else if (accuracyScore >= 55 && accuracyScore < 70) {
         accuracyLabel.classList.add("good");
-    } else if (accuracyScore >= 50 && accuracyScore < 75) {
+    } else if (accuracyScore >= 30 && accuracyScore < 55) {
         accuracyLabel.classList.add("average");
-    } else if (accuracyScore < 50) {
+    } else if (accuracyScore < 30) {
         accuracyLabel.classList.add("bad");
     }
 
+}
+
+function clearClasses() {
+    accuracyLabel.classList.remove("great");
+    accuracyLabel.classList.remove("good");
+    accuracyLabel.classList.remove("average");
+    accuracyLabel.classList.remove("bad");
 }

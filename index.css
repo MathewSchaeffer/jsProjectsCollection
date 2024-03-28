@@ -41,8 +41,13 @@ header h1 {
 
 #headerContainer img {
     height: 40px;
-    width: 100%;
+    width: 40px;
     /* object-fit: contain; */
+    transition: transform 200ms ease-in-out;
+}
+
+#headerContainer img:hover {
+    transform: rotate(25deg);
 }
 
 /* #headerLeft {

@@ -44,6 +44,18 @@
     font-size: 5em;
 }
 
+.bad {
+    color: red;
+}
+
+.average {
+    color: orange;
+}
+
+.good {
+    color: green;
+}
+
 #reset {
     margin-top: 25px;
 

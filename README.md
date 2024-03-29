@@ -5,7 +5,9 @@ Hi, I'm **Mathew Schaeffer**, and this is a collection of small applications, ga
 
 ## Projects
 
-# [Goal Tracker](https://mathewschaeffer.github.io/jsProjectsCollection/shootingtracker/shootingtracker.html)
+# [Goal Tracker]
+
+[Goal Tracker](https://mathewschaeffer.github.io/jsProjectsCollection/shootingtracker/shootingtracker.html)
 Calculate your accuracy when shooting for netball, basketball or other sports and activities.
 
 https://mathewschaeffer.github.io/jsProjectsCollection/shootingtracker/shootingtracker.html

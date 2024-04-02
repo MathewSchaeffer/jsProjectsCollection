@@ -41,9 +41,11 @@ goalButton.addEventListener('click', (e) => {
 });
 
 // Reset Button event handler
-resetButton.addEventListener('click', (e) => {
-    resetAll();
-});
+// resetButton.addEventListener('click', (e) => {
+//     resetAll();
+// });
+
+resetButton.addEventListener('click', resetAll);
 
 function updateAttempts(attempts) {
     attemptsLabel.innerText = attempts;
@@ -88,8 +90,8 @@ function calculatePercentage(goal, attempts) {
 }
 
 function clearClasses() {
-    accuracyLabel.classList.remove("great");
-    accuracyLabel.classList.remove("good");
-    accuracyLabel.classList.remove("average");
-    accuracyLabel.classList.remove("bad");
+    accuracyLabel.classList.remove("great", "good", "average", "bad");
+    // accuracyLabel.classList.remove("good");
+    // accuracyLabel.classList.remove("average");
+    // accuracyLabel.classList.remove("bad");
 }
